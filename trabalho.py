@@ -7,7 +7,7 @@ class Cliente:
         self.agencia = agencia
         self.conta = conta
         self.saldo = saldo
-        self.extrato = []  # agora inicializado
+        self.extrato = [] 
 
     def registrar_extrato(self, descricao):
         self.extrato.append(descricao)
@@ -59,4 +59,5 @@ c2 = Cliente("Gabriel Costa", "Banco do Brasil", 2626, "81239-1", 17082.45)
 c1.transfere(3000, c2)
 c1.mostrar_extrato()
 c2.mostrar_extrato()
+
 
